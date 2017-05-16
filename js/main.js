@@ -45,4 +45,15 @@ function validateForm(){
 			span.appendChild(contenido);
 		return span;
 	}
+	//no funciona
+	if(seleccion == null || seleccion == 0){
+			var span = document.createElement("span");
+			var ident = document.getElementsByClassName("form-group input-box");
+			var padre = ident.parentNode;
+			padre.appendChild(span);
+
+			var contenido = document.createTextNode("Debe seleccionar alguna opción");
+			span.appendChild(contenido);
+		return span;
+	}
 }
