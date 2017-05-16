@@ -25,4 +25,14 @@ function validateForm(){
 			span.appendChild(contenido);
 		return span;
 	}
+	if((/\w+([-+.']\w+)@\w+([-.]\w+)\.\w+([-.]\w+)/.test(correo))){
+			var span = document.createElement("span");
+			var ident = document.getElementById("input-email");
+			var padre = ident.parentNode;
+			padre.appendChild(span);
+
+			var contenido = document.createTextNode("Su correo debe contener '@'");
+			span.appendChild(contenido);
+		return span;
+	}
 }
