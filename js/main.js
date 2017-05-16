@@ -15,5 +15,14 @@ function validateForm(){
 			span.appendChild(contenido);
 		return span;
 	}	
+	if(apellido == "" || apellido.length == 0 || apellido.charAt(0) != apellido.charAt(0).toUpperCase()){
+			var span = document.createElement("span");
+			var ident = document.getElementById("lastname");
+			var padre = ident.parentNode;
+			padre.appendChild(span);
 
+			var contenido = document.createTextNode("Debe ingresar su apellido");
+			span.appendChild(contenido);
+		return span;
+	}
 }
