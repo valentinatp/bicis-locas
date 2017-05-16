@@ -45,7 +45,7 @@ function validateForm(){
 			span.appendChild(contenido);
 		return span;
 	}
-	//no funciona
+	//ahora si funciona le di un "id" desde html, ya que con "class" no tomaba
 	if(seleccion == null || seleccion == 0){
 			var span = document.createElement("span");
 			var ident = document.getElementById("seleccion");
