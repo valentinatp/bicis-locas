@@ -35,4 +35,14 @@ function validateForm(){
 			span.appendChild(contenido);
 		return span;
 	}
+	if(contra.length <= 6 || contra == "" || contra == "123456" || contra == "098765"){
+			var span = document.createElement("span");
+			var ident = document.getElementById("input-password");
+			var padre = ident.parentNode;
+			padre.appendChild(span);
+
+			var contenido = document.createTextNode("Debe ingresar una contraseña");
+			span.appendChild(contenido);
+		return span;
+	}
 }
